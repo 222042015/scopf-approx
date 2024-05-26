@@ -3,9 +3,9 @@ import argparse
 import pandas as pd
 import os
 
-network_dir = '/home/jxxiong/A-xjx/Network_1/'
+network_dir = './data/Network_1/'
 EVALUATION_RESULT_DIR = "./result/"
-PMSC_DIR = "/home/jxxiong/A-xjx/PowerModelsSecurityConstrained.jl/src/scripts/c1/solve_time_result/"
+PMSC_DIR = "../approx-optimize-scopf/src/scripts/c1/solve_time_result/"
 
 
 def update_df_pen(df, scenario):

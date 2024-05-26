@@ -18,10 +18,7 @@ python test.py "$raw" "$rop" "$con" "$inl" "$sol1" "$sol2" "$summary" "$detail"
 #for idx in $(seq 601 650);
 #do
 #  echo $idx
-#  case_dir='/home/jxxiong/A-xjx/Network_1/scenario_'
-#  # case_dir='/home/jxxiong/A-xjx/Network_03R-10/scenario_'
-#  # case_dir='/home/jxxiong/A-xjx/IEEE14/scenario_'
-#  # case_dir="/home/jxxiong/A-xjx/PowerModelsSecurityConstrained.jl/test/data/c1/scenario_0"
+#  case_dir='./data/Network_1/scenario_'
 #  case_dir=$case_dir$idx"/"
 #  raw=$case_dir'case.raw'
 #  rop=$case_dir'case.rop'
@@ -45,9 +42,7 @@ python test.py "$raw" "$rop" "$con" "$inl" "$sol1" "$sol2" "$summary" "$detail"
 #done
 
 ############################## evaluate all scenarios for a given network ################################
-#network_dir='/Users/xiongjinxin/A-xjx/SRIBD/PowerModelsSecurityConstrained2.jl/test/data/Network_02O-173/'
-#network_dir='/Users/xiongjinxin/A-xjx/SRIBD/PowerModelsSecurityConstrained2.jl/test/data/c2/'
-#network_dir='/home/jinxin/xjx/SRIBD/Network_1'
+#network_dir='./data/Network_1'
 #for scenario in "$network_dir"/*/;
 #
 #do
@@ -72,7 +67,7 @@ python test.py "$raw" "$rop" "$con" "$inl" "$sol1" "$sol2" "$summary" "$detail"
 
 
 ############################## create sol1, sol2 folders and move all sol1_* files to sol1 folder ###########
-#network_dir='/Users/xiongjinxin/A-xjx/SRIBD/PowerModelsSecurityConstrained2.jl/test/data/Network_02O-173/'
+#network_dir='./data/Network_1/'
 #cd $network_dir
 #for dir in */;
 #do
@@ -99,7 +94,7 @@ python test.py "$raw" "$rop" "$con" "$inl" "$sol1" "$sol2" "$summary" "$detail"
 
 
 ############################# evaluate all sol2 and sol1 and generate detail.csv files in the detail folder ###########
-# network_dir='/home/jxxiong/A-xjx/Network_1/'
+# network_dir='/data/Network_1/'
 # evaluation_dir=$(pwd)
 #
 # cd $network_dir

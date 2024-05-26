@@ -8,8 +8,8 @@ from approx_model import ApproxNet
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 learning_rate = 0.0005
 batch_size = 64
-NUM_HIDDEN_LIST = [16, 64] #[128, 64]
-log_dir = "./model/weights/no_regularization/"
+NUM_HIDDEN_LIST = [16, 64]
+log_dir = "./model/weights/"
 print(f'log_dir: {log_dir}')
 print("using device: ", DEVICE)
 input_dim = 1502 # 2840, 502

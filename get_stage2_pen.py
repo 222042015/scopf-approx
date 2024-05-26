@@ -5,8 +5,8 @@ import evaluation
 import data
 import math
 
-network_dir = '/home/jxxiong/A-xjx/Network_1/'
-eval_dir = '/home/jxxiong/A-xjx/ScopfApprox/data/'
+network_dir = './data/Network_1/'
+eval_dir = '/ScopfApprox/data/'
 
 
 BASE = 100
@@ -135,4 +135,4 @@ df_test.to_csv(eval_dir+"stage2_pen_test.csv", index=False)
 # df2 = None
 # for s in range(501, 503):
 #     df2 = update_df_pen(df, "scenario_" + str(s))
-# df2.to_csv("/home/jxxiong/A-xjx/ScopfApprox/data/stage2_tmp.csv", index=False)
+# df2.to_csv("/ScopfApprox/data/stage2_tmp.csv", index=False)
