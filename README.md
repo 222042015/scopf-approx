@@ -1,4 +1,4 @@
-# SCOPF surragate 
+# SCOPF surrogate 
 1. generate the scenario data
 2. evaluate the solutions to generate the training data for the approximation network
 
